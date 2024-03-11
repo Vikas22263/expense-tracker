@@ -5,8 +5,8 @@ import Order from "../models/order.model.js";
 import Totalexpense from "../models/totalexpense.model.js";
 import Forgotpassword from "../models/forgotrequests.model.js";
 import Expensereocord from "../models/userexpenerecode.model.js";
-const dbConnect = new Sequelize("node-schema", "root", "Vikas@10", {
-  host: "localhost",
+const dbConnect = new Sequelize("expense", "vikas22263", "vikaspatel10", {
+  host: "expensetracker22263.c7ggo0wq0jg1.us-east-1.rds.amazonaws.com",
   dialect: "mysql",
   // logging: false,
 });
