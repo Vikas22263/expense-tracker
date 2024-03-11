@@ -1,0 +1,105 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.7/axios.min.js"
+      integrity="sha512-NQfB/bDaB8kaSXF8E77JjhHG5PM6XVRxvHzkZiwl3ddWCEPBa23T76MuWSwAJdMGJnmQqM0VeY9kFszsrBEFrQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+    <script defer src="./js/home.js"></script>
+    <title>Navbar</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar-container container">
+        <input type="checkbox" name="" id="" />
+        <div class="hamburger-lines">
+          <span class="line line1"></span>
+          <span class="line line2"></span>
+          <span class="line line3"></span>
+        </div>
+        <ul class="menu-items leetbord-btn">
+          <span class="rows"></span>
+          <select name="row" class="row">
+            <option value="5">5</option>
+            <option value="10">10</option>
+            <option value="15">15</option>
+            <option value="20">20</option>
+            <option value="25">25</option>
+          </select>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="#" id="premium" class="premiumuser">Buy-Premium</a></li>
+        </ul>
+
+        <ul class="menu-items" id="private">
+          
+          <li><a href="./login-page.html">Login</a></li>
+          <li><a href="./register-page.html">Register</a></li>
+        </ul>
+      </div>
+    </nav>
+     <div class="main-body ">
+      <div class="main-container">
+        <div class="notlogin" id="not-login">
+          <h1>Welcome to the Expance Tracker</h1>
+          <p>User not Loged in Please <a href="./login-page.html">login</a></p>
+        </div>
+        <div class="expenseform" id="expense-from">
+          <div class="inner-expense">
+            <form>
+              <div class="input__box">
+                <span class="details">Amount</span>
+                <input name="Amount" placeholder="889" required />
+              </div>
+              <div class="input__box">
+                <span class="details">Description</span>
+                <input name="Description" required />
+              </div>
+              <div class="input__box">
+                <span class="details">Category</span>
+                <select name="Category">
+                  <option value="movie">Movie</option>
+                  <option value="groceries">Groceries</option>
+                  <option value="utilities">Utilities</option>
+                  <option value="dinner">Dinner</option>
+                  <option value="shoes">Shoes</option>
+                </select>
+              </div>
+              <div class="btn">
+                <button class="button" type="button ">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="allexpenses">
+        <div class="allexpense">
+          <h1>No Expense Please Add</h1>
+        </div>
+      </div>
+      <div class="items">
+      </div>
+      <div class="Leed-bord"></div>
+      <footer>
+       <div class="pagination">
+        <button class="page-left"></button>
+        <button class="page-right"></button>
+       </div>
+      </footer>
+     </div>
+       <a href=""></a>
+     <div class="download-reportmainbody ">
+       <div class="download-reportbody displaynone">
+        <div class="close-report">&#10060</div>
+        <div class="report-data"></div>
+       </div>
+     </div>
+  </body>
+</html>
